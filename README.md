@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## テーブル設計
 
-Things you may want to cover:
+## Usersテーブル
+| Column             | Type    | Options                   |
+| ------------------ | ------  | ------------------------- |
+| nickname           | string  | null: false               |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false               |
 
-* Ruby version
+### Association
+- has_many :items
+- has_many :likes
 
-* System dependencies
+## Itemsテーブル
+| Column              | Type       | Options                         |
+| ------------------- | ---------- |-------------------------------- |
+| title                | string    | null: false                     |
+| rank1                | text      | null: false                     |
+| rank2                | text      | null: false                     |
+| rank3                | text      | null: false                     |
+| rank4                | text      | null: false                     |
+| rank5                | text      | null: false                     |
+| rank6                | text      | null: false                     |
+| rank7                | text      | null: false                     |
+| rank8                | text      | null: false                     |
+| rank9                | text      | null: false                     |
+| rank10               | text      | null: false                     |
+| detail               | text      | null: false                     |
+| user                | references | null: false, foreign_keys: true |
 
-* Configuration
+### Association
+- belongs_to :user
+- has_many :likes
 
-* Database creation
 
-* Database initialization
+## Likesテーブル
+| Column           | Type       | Options                         |
+| ---------------- | ---------  |-------------------------------- |
+| item             | references | null: false, foreign_keys: true |
+| user             | references | null: false, foreign_keys: true |
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :item
+- belongs_to :user
