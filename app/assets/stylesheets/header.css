@@ -1,0 +1,33 @@
+.header{
+  width: 100vw;
+  height: 12vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form{
+  width: 40vh;
+  display:block;
+  align-items: center;
+}
+
+p > #search{
+  width: 20vw;
+  height: 5vh;
+  margin: 0 auto;
+}
+
+p > #btn{
+ padding: 0 8.6vw;
+}
+
+.login-status{
+  list-style: none;
+  margin: 0 40px 0 20px;
+}
+
+.logout, .login, .sign-up{
+  text-decoration: none;
+}

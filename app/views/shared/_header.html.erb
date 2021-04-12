@@ -1,13 +1,20 @@
-<div class="login-status">
-  <% if user_signed_in? %>
-    <li><%= link_to current_user.nickname, user_path(current_user.id), class: "user-nickname" %></li>
-    <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-  <% else %>
-    <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-    <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-  <% end %>
-</div>
+<div class="header">
+  <div class="title">
+    <h2>MyBest10</h2>
+  </div>
 
-<div class="search-form">
-検索フォーム
+  <div class="search-form">
+    <p><input type="text" id="search" name="search" placeholder="キーワードを入力"></p>
+    <p><input id="btn" type="submit" value="さがす"><p>
+  </div>
+
+  <div class="login-status">
+    <% if user_signed_in? %>
+      <li><%= link_to current_user.nickname, user_path(current_user.id), class: "user-nickname" %></li>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+    <% else %>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+    <% end %>
+  </div>
 </div>
