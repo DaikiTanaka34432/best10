@@ -2,6 +2,14 @@
 
 <%= form_with model: @user, url: user_registration_path, id:'new_user', class:'new_user', local: true do |f|%>
   <%= render "devise/shared/error_messages", resource: resource %>
+  
+  <div class="field">
+    <div class='form-text-wrap'>
+      <label class="form-text">ニックネーム</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"ベスト太郎", maxlength:"30" %>
+  </div>
 
   <div class="field">
     <div class='form-text-wrap'>
