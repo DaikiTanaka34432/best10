@@ -1,0 +1,53 @@
+
+.new-form {
+  width: 78%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(255, 255, 213);
+}
+
+.registration {
+ margin: 10vh 0;
+ padding-top: 10px;
+}
+
+.new_user{
+  margin: 5vh 0;
+}
+
+.field{
+  margin-bottom: 15px;
+}
+
+.input-default{
+  width: 22vw;
+  height: 24px;
+}
+
+#user_email{
+  width: 22vw;
+  height: 24px;
+}
+
+#user_password{
+  width: 22vw;
+  height: 24px;
+}
+
+#user_password_confirmation{
+  width: 22vw;
+  height: 24px;
+}
+
+.new-ok {
+  width: 12vw;
+  height: 24px;
+}
+
+.indispensable{
+  background-color: yellow;
+}
+
+.login-link{
+  padding-bottom: 20px;
+}
