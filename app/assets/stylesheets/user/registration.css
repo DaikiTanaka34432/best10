@@ -1,12 +1,14 @@
-*{
-  background-color: rgb(195, 229, 243);
-}
+
 .new-form {
+  width: 78%;
+  margin: 0 auto;
   text-align: center;
+  background-color: rgb(255, 255, 213);
 }
 
 .registration {
  margin: 10vh 0;
+ padding-top: 10px;
 }
 
 .new_user{
@@ -46,5 +48,6 @@
   background-color: yellow;
 }
 
-.login_link{
+.login-link{
+  padding-bottom: 20px;
 }
