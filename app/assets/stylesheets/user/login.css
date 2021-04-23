@@ -1,0 +1,12 @@
+/* registration.cssを併用 */
+
+.actions{
+  margin: 10vh 0;
+}
+
+.login-btn{
+  background-color: yellow;
+  font-weight:bold;
+  width:22vw;
+  height: 30px;
+}
